@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
+
+//Icons
 import { RiMoonClearLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
@@ -9,9 +11,14 @@ import { AiFillMediumSquare } from "react-icons/ai";
 
 // profile
 import profileImage from "../public/p2.png";
-//card
+//card image
 import designImage from "../public/design.png";
 import codeImage from "../public/code.png";
+
+//project image
+import project1 from "../public/web1.png";
+import project2 from "../public/web2.png";
+import project3 from "../public/web3.png";
 
 export default function Home() {
   return (
@@ -152,6 +159,87 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* projects */}
+
+        <section>
+          <div>
+            <h2 className="text-5xl py-10 font-bold opacity-60">Portifolio</h2>
+            <p className="text-sm py-2 text-gray-800 leading-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              eveniet porro fuga voluptatem fugiat itaque quaerat voluptasLorem
+              ipsum dolor sit amet consectetur adipisicing elit. Hic eveniet
+              porro fuga voluptatem fugiat itaque quaerat voluptas
+            </p>
+            <div className="flex flex-col gap-10 p-10 ">
+              <Image
+                className="rounded-lg object-cover"
+                src={project2}
+                alt="project1"
+                layout="responsive"
+              />
+              <Image
+                className="rounded-lg object-cover"
+                src={project3}
+                alt="project1"
+                layout="responsive"
+              />
+              <Image
+                className="rounded-lg object-cover"
+                src={project1}
+                alt="project1"
+                layout="responsive"
+              />
+              <Image
+                className="rounded-lg object-cover"
+                src={project2}
+                alt="project1"
+                layout="responsive"
+              />
+              <Image
+                className="rounded-lg object-cover"
+                src={project3}
+                alt="project1"
+                layout="responsive"
+              />
+              <Image
+                className="rounded-lg object-cover"
+                src={project1}
+                alt="project1"
+                layout="responsive"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* footer */}
+        <footer className="border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10">
+          <div>
+            <h3 className="text-base mb-2">Contact more details</h3>
+            <p className="text-sm py-4 text-gray-400">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam optio harum sint numquam odit quas odio consectetur,
+              suscipit earum aliquid aspernatur placeat! Molestiae repellat sunt
+              non soluta quibusdam, dicta aut!
+            </p>
+
+            {/* social links */}
+            <div className="text-3xl flex justify-center gap-10 text-gray-600">
+              <a href="">
+                <FaGithub />
+              </a>
+              <a href="">
+                <ImLinkedin />
+              </a>
+              <a href="">
+                <FaFacebook />
+              </a>
+              <a href="">
+                <AiFillMediumSquare />
+              </a>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   );
