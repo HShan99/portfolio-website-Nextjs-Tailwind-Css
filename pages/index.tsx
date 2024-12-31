@@ -9,6 +9,9 @@ import { AiFillMediumSquare } from "react-icons/ai";
 
 // profile
 import profileImage from "../public/p2.png";
+//card
+import designImage from "../public/design.png";
+import codeImage from "../public/code.png";
 
 export default function Home() {
   return (
@@ -79,6 +82,74 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
             />
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h2 className="text-5xl py-10 font-bold opacity-60">
+              Services I Offer
+            </h2>
+            <p className="text-sm py-2 text-gray-400 leading-6">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam optio harum sint numquam odit quas odio consectetur,
+              suscipit earum aliquid aspernatur placeat! Molestiae repellat sunt
+              non soluta quibusdam, dicta aut!
+            </p>
+          </div>
+          {/* service card */}
+          <div>
+            {/* card */}
+            <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+              <Image
+                src={designImage}
+                alt="design image"
+                width={100}
+                height={100}
+                className="inline"
+              />
+              <h2 className="text-2xl font-bold">UI/UX Designing</h2>
+              <p className="text-sm py-2 text-gray-800 leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                eveniet porro fuga voluptatem fugiat itaque quaerat
+                voluptasLorem ipsum dolor sit amet consectetur adipisicing elit.
+                Hic eveniet porro fuga voluptatem fugiat itaque quaerat voluptas
+              </p>
+            </div>
+
+            <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+              <Image
+                src={codeImage}
+                alt="design image"
+                width={100}
+                height={100}
+                className="inline"
+              />
+              <h2 className="text-2xl font-bold">Front-End Developer</h2>
+              <p className="text-sm py-2 text-gray-800 leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                eveniet porro fuga voluptatem fugiat itaque quaerat
+                voluptasLorem ipsum dolor sit amet consectetur adipisicing elit.
+                Hic eveniet porro fuga voluptatem fugiat itaque quaerat voluptas
+              </p>
+            </div>
+
+            <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+              <Image
+                src={codeImage}
+                alt="design image"
+                width={100}
+                height={100}
+                className="inline"
+              />
+              <h2 className="text-2xl font-bold">Back-End Developer</h2>
+              <p className="text-sm py-2 text-gray-800 leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                eveniet porro fuga voluptatem fugiat itaque quaerat
+                voluptasLorem ipsum dolor sit amet consectetur adipisicing elit.
+                Hic eveniet porro fuga voluptatem fugiat itaque quaerat voluptas
+              </p>
+            </div>
           </div>
         </section>
       </main>
