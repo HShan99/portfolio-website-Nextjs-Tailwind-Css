@@ -32,11 +32,11 @@ export default function Home() {
           url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
       </Head>
-      <main className="font-Poppins bg-yellow-50 min-h-screen px-10">
+      <main className="font-Poppins bg-yellow-50 min-h-screen px-10 md:px-20 lg:px-40">
         <section>
           {/* nav section */}
           <nav className="py-10 flex justify-between ">
-            <h1 className="text-sm">Developed by Shan</h1>
+            <h1 className="text-sm md:text-xl">Developed by Shan</h1>
             <ul className="flex items-center">
               <li>
                 <RiMoonClearLine className="cursor-pointer text-xl mx-5" />
@@ -55,9 +55,11 @@ export default function Home() {
 
           {/* hero section */}
           <div className="text-center p-10">
-            <h1 className="text-5xl font-bold">Shan Rathnayake</h1>
-            <h3 className="text-2xl py-4">Full-Stack Developer</h3>
-            <p className="text-sm py-4 text-gray-400">
+            <h1 className="text-4xl font-bold text-yellow-400 md:text-6xl lg:text-7xl lg:mb-4">
+              Shan Rathnayake
+            </h1>
+            <h3 className="text-2xl py-4  md:text-3xl">Full-Stack Developer</h3>
+            <p className="text-sm py-4 text-gray-400 leading-6 max-w-xl mx-auto md:text-md ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Quibusdam optio harum sint numquam odit quas odio consectetur,
               suscipit earum aliquid aspernatur placeat! Molestiae repellat sunt
@@ -105,7 +107,7 @@ export default function Home() {
             </p>
           </div>
           {/* service card */}
-          <div>
+          <div className="md:flex lg:flex gap-10 mx-auto">
             {/* card */}
             <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
               <Image
@@ -171,49 +173,61 @@ export default function Home() {
               ipsum dolor sit amet consectetur adipisicing elit. Hic eveniet
               porro fuga voluptatem fugiat itaque quaerat voluptas
             </p>
-            <div className="flex flex-col gap-10 p-10 ">
-              <Image
-                className="rounded-lg object-cover"
-                src={project2}
-                alt="project1"
-                layout="responsive"
-              />
-              <Image
-                className="rounded-lg object-cover"
-                src={project3}
-                alt="project1"
-                layout="responsive"
-              />
-              <Image
-                className="rounded-lg object-cover"
-                src={project1}
-                alt="project1"
-                layout="responsive"
-              />
-              <Image
-                className="rounded-lg object-cover"
-                src={project2}
-                alt="project1"
-                layout="responsive"
-              />
-              <Image
-                className="rounded-lg object-cover"
-                src={project3}
-                alt="project1"
-                layout="responsive"
-              />
-              <Image
-                className="rounded-lg object-cover"
-                src={project1}
-                alt="project1"
-                layout="responsive"
-              />
+            <div className="flex flex-col gap-10 p-10 lg:flex-row lg:flex-wrap ">
+              <div className="basis-1/3 flex-1">
+                <Image
+                  className="rounded-lg object-cover"
+                  src={project2}
+                  alt="project1"
+                  layout="responsive"
+                />
+              </div>
+              <div className="basis-1/3 flex-1">
+                <Image
+                  className="rounded-lg object-cover"
+                  src={project3}
+                  alt="project1"
+                  layout="responsive"
+                />
+              </div>
+              <div className="basis-1/3 flex-1">
+                <Image
+                  className="rounded-lg object-cover"
+                  src={project1}
+                  alt="project1"
+                  layout="responsive"
+                />
+              </div>
+              <div className="basis-1/3 flex-1">
+                <Image
+                  className="rounded-lg object-cover"
+                  src={project2}
+                  alt="project1"
+                  layout="responsive"
+                />
+              </div>
+              <div className="basis-1/3 flex-1">
+                <Image
+                  className="rounded-lg object-cover"
+                  src={project3}
+                  alt="project1"
+                  layout="responsive"
+                />
+              </div>
+              <div className="basis-1/3 flex-1">
+                <Image
+                  className="rounded-lg object-cover"
+                  src={project1}
+                  alt="project1"
+                  layout="responsive"
+                />
+              </div>
             </div>
           </div>
         </section>
 
         {/* footer */}
-        <footer className="border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10">
+        <footer className="border-t-2 border-black text-sm opacity-70 flex flex-col gap-5 items-center justify-center py-10 lg:flex-row lg:items-center">
           <div>
             <h3 className="text-base mb-2">Contact more details</h3>
             <p className="text-sm py-4 text-gray-400">
