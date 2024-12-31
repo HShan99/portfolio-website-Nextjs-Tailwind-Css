@@ -9,6 +9,9 @@ import { ImLinkedin } from "react-icons/im";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillMediumSquare } from "react-icons/ai";
 
+//motion
+import { motion } from "framer-motion";
+
 // profile
 import profileImage from "../public/p2.png";
 //card image
@@ -22,6 +25,7 @@ import project3 from "../public/web3.png";
 
 //hook
 import { useState } from "react";
+import { MdOpacity } from "react-icons/md";
 
 export default function Home() {
   //function
@@ -96,14 +100,20 @@ export default function Home() {
           </div>
 
           {/* profile */}
-          <div className="w-80 h-80 p-5 mt-7 m-auto relative bg-gradient-to-b from-yellow-200 rounded-full">
-            <Image
-              src={profileImage}
-              alt="Profile image"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="w-80 h-80 p-5 mt-7 m-auto relative bg-gradient-to-b from-yellow-200 rounded-full">
+              <Image
+                src={profileImage}
+                alt="Profile image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          </motion.div>
         </section>
 
         <section>
@@ -121,56 +131,65 @@ export default function Home() {
           {/* service card */}
           <div className="md:flex lg:flex gap-10 mx-auto">
             {/* card */}
-            <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
-              <Image
-                src={designImage}
-                alt="design image"
-                width={100}
-                height={100}
-                className="inline"
-              />
-              <h2 className="text-2xl font-bold">UI/UX Designing</h2>
-              <p className="text-sm py-2 text-gray-800 leading-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                eveniet porro fuga voluptatem fugiat itaque quaerat
-                voluptasLorem ipsum dolor sit amet consectetur adipisicing elit.
-                Hic eveniet porro fuga voluptatem fugiat itaque quaerat voluptas
-              </p>
-            </div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+                <Image
+                  src={designImage}
+                  alt="design image"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">UI/UX Designing</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  eveniet porro fuga voluptatem fugiat itaque quaerat
+                  voluptasLorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Hic eveniet porro fuga voluptatem fugiat itaque quaerat
+                  voluptas
+                </p>
+              </div>
+            </motion.div>
 
-            <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
-              <Image
-                src={codeImage}
-                alt="design image"
-                width={100}
-                height={100}
-                className="inline"
-              />
-              <h2 className="text-2xl font-bold">Front-End Developer</h2>
-              <p className="text-sm py-2 text-gray-800 leading-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                eveniet porro fuga voluptatem fugiat itaque quaerat
-                voluptasLorem ipsum dolor sit amet consectetur adipisicing elit.
-                Hic eveniet porro fuga voluptatem fugiat itaque quaerat voluptas
-              </p>
-            </div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+                <Image
+                  src={codeImage}
+                  alt="design image"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Front-End Developer</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  eveniet porro fuga voluptatem fugiat itaque quaerat
+                  voluptasLorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Hic eveniet porro fuga voluptatem fugiat itaque quaerat
+                  voluptas
+                </p>
+              </div>
+            </motion.div>
 
-            <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
-              <Image
-                src={codeImage}
-                alt="design image"
-                width={100}
-                height={100}
-                className="inline"
-              />
-              <h2 className="text-2xl font-bold">Back-End Developer</h2>
-              <p className="text-sm py-2 text-gray-800 leading-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                eveniet porro fuga voluptatem fugiat itaque quaerat
-                voluptasLorem ipsum dolor sit amet consectetur adipisicing elit.
-                Hic eveniet porro fuga voluptatem fugiat itaque quaerat voluptas
-              </p>
-            </div>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <div className="bg-yellow-300 text-center shadow-sm p-5 rounded-xl my-10">
+                <Image
+                  src={codeImage}
+                  alt="design image"
+                  width={100}
+                  height={100}
+                  className="inline"
+                />
+                <h2 className="text-2xl font-bold">Back-End Developer</h2>
+                <p className="text-sm py-2 text-gray-800 leading-6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  eveniet porro fuga voluptatem fugiat itaque quaerat
+                  voluptasLorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Hic eveniet porro fuga voluptatem fugiat itaque quaerat
+                  voluptas
+                </p>
+              </div>
+            </motion.div>
           </div>
         </section>
 
@@ -189,52 +208,82 @@ export default function Home() {
             </p>
             <div className="flex flex-col gap-10 p-10 lg:flex-row lg:flex-wrap ">
               <div className="basis-1/3 flex-1">
-                <Image
-                  className="rounded-lg object-cover"
-                  src={project2}
-                  alt="project1"
-                  layout="responsive"
-                />
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: 2 }}
+                  whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+                >
+                  <Image
+                    className="rounded-lg object-cover"
+                    src={project2}
+                    alt="project1"
+                    layout="responsive"
+                  />
+                </motion.div>
               </div>
               <div className="basis-1/3 flex-1">
-                <Image
-                  className="rounded-lg object-cover"
-                  src={project3}
-                  alt="project1"
-                  layout="responsive"
-                />
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: 2 }}
+                  whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+                >
+                  <Image
+                    className="rounded-lg object-cover"
+                    src={project3}
+                    alt="project1"
+                    layout="responsive"
+                  />
+                </motion.div>
               </div>
               <div className="basis-1/3 flex-1">
-                <Image
-                  className="rounded-lg object-cover"
-                  src={project1}
-                  alt="project1"
-                  layout="responsive"
-                />
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: 2 }}
+                  whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+                >
+                  <Image
+                    className="rounded-lg object-cover"
+                    src={project1}
+                    alt="project1"
+                    layout="responsive"
+                  />
+                </motion.div>
               </div>
               <div className="basis-1/3 flex-1">
-                <Image
-                  className="rounded-lg object-cover"
-                  src={project2}
-                  alt="project1"
-                  layout="responsive"
-                />
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: 2 }}
+                  whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+                >
+                  <Image
+                    className="rounded-lg object-cover"
+                    src={project2}
+                    alt="project1"
+                    layout="responsive"
+                  />
+                </motion.div>
               </div>
               <div className="basis-1/3 flex-1">
-                <Image
-                  className="rounded-lg object-cover"
-                  src={project3}
-                  alt="project1"
-                  layout="responsive"
-                />
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: 2 }}
+                  whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+                >
+                  <Image
+                    className="rounded-lg object-cover"
+                    src={project3}
+                    alt="project1"
+                    layout="responsive"
+                  />
+                </motion.div>
               </div>
               <div className="basis-1/3 flex-1">
-                <Image
-                  className="rounded-lg object-cover"
-                  src={project1}
-                  alt="project1"
-                  layout="responsive"
-                />
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: 2 }}
+                  whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
+                >
+                  <Image
+                    className="rounded-lg object-cover"
+                    src={project1}
+                    alt="project1"
+                    layout="responsive"
+                  />
+                </motion.div>
               </div>
             </div>
           </div>
