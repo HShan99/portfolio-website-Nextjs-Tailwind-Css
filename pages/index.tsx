@@ -2,6 +2,13 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
 import { RiMoonClearLine } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
+import { ImLinkedin } from "react-icons/im";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillMediumSquare } from "react-icons/ai";
+
+// profile
+import profileImage from "../public/p2.png";
 
 export default function Home() {
   return (
@@ -17,6 +24,7 @@ export default function Home() {
       </Head>
       <main className="font-Poppins bg-yellow-50 min-h-screen px-10">
         <section>
+          {/* nav section */}
           <nav className="py-10 flex justify-between ">
             <h1 className="text-sm">Developed by Shan</h1>
             <ul className="flex items-center">
@@ -34,6 +42,44 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+
+          {/* hero section */}
+          <div className="text-center p-10">
+            <h1 className="text-5xl font-bold">Shan Rathnayake</h1>
+            <h3 className="text-2xl py-4">Full-Stack Developer</h3>
+            <p className="text-sm py-4 text-gray-400">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam optio harum sint numquam odit quas odio consectetur,
+              suscipit earum aliquid aspernatur placeat! Molestiae repellat sunt
+              non soluta quibusdam, dicta aut!
+            </p>
+          </div>
+
+          {/* social links */}
+          <div className="text-3xl flex justify-center gap-10 text-gray-600">
+            <a href="">
+              <FaGithub />
+            </a>
+            <a href="">
+              <ImLinkedin />
+            </a>
+            <a href="">
+              <FaFacebook />
+            </a>
+            <a href="">
+              <AiFillMediumSquare />
+            </a>
+          </div>
+
+          {/* profile */}
+          <div className="w-80 h-80 p-5 mt-7 m-auto relative bg-gradient-to-b from-yellow-200 rounded-full">
+            <Image
+              src={profileImage}
+              alt="Profile image"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
         </section>
       </main>
     </div>
