@@ -76,26 +76,23 @@ export default function Home() {
               Full-Stack Developer
             </h3>
             <p className="text-sm py-4 text-gray-400 leading-6 max-w-xl mx-auto md:text-md ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quibusdam optio harum sint numquam odit quas odio consectetur,
-              suscipit earum aliquid aspernatur placeat! Molestiae repellat sunt
-              non soluta quibusdam, dicta aut!
+              I’m Shan, a full-stack developer specializing in Laravel for
+              back-end development and React.js for creating dynamic, responsive
+              front-end interfaces. I’m passionate about building efficient,
+              scalable web applications that deliver seamless user experiences.
             </p>
           </div>
 
           {/* social links */}
           <div className="text-3xl flex justify-center gap-10 text-gray-600">
-            <a href="">
+            <a href="https://github.com/HShan99">
               <FaGithub />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/shan-rathnayake-0149751b8/">
               <ImLinkedin />
             </a>
             <a href="">
               <FaFacebook />
-            </a>
-            <a href="">
-              <AiFillMediumSquare />
             </a>
           </div>
 
@@ -119,14 +116,9 @@ export default function Home() {
         <section>
           <div>
             <h2 className="text-5xl py-10 font-bold opacity-60 dark:text-white dark:opacity-80">
-              Services I Offer
+              Services
             </h2>
-            <p className="text-sm py-2 text-gray-400 leading-6 dark:text-white">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quibusdam optio harum sint numquam odit quas odio consectetur,
-              suscipit earum aliquid aspernatur placeat! Molestiae repellat sunt
-              non soluta quibusdam, dicta aut!
-            </p>
+            <p className="text-sm py-2 text-gray-400 leading-6 dark:text-white"></p>
           </div>
           {/* service card */}
           <div className="md:flex lg:flex gap-10 mx-auto">
@@ -142,11 +134,10 @@ export default function Home() {
                 />
                 <h2 className="text-2xl font-bold">UI/UX Designing</h2>
                 <p className="text-sm py-2 text-gray-800 leading-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  eveniet porro fuga voluptatem fugiat itaque quaerat
-                  voluptasLorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Hic eveniet porro fuga voluptatem fugiat itaque quaerat
-                  voluptas
+                  I design intuitive and visually engaging user interfaces that
+                  prioritize user experience. By focusing on usability,
+                  accessibility, and aesthetics, I create designs that ensure
+                  seamless navigation and interaction across devices.
                 </p>
               </div>
             </motion.div>
@@ -162,11 +153,10 @@ export default function Home() {
                 />
                 <h2 className="text-2xl font-bold">Front-End Developer</h2>
                 <p className="text-sm py-2 text-gray-800 leading-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  eveniet porro fuga voluptatem fugiat itaque quaerat
-                  voluptasLorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Hic eveniet porro fuga voluptatem fugiat itaque quaerat
-                  voluptas
+                  I create responsive and dynamic user interfaces using
+                  React.js. With a focus on seamless user experiences, I ensure
+                  visually appealing designs that work flawlessly across all
+                  devices.
                 </p>
               </div>
             </motion.div>
@@ -182,11 +172,10 @@ export default function Home() {
                 />
                 <h2 className="text-2xl font-bold">Back-End Developer</h2>
                 <p className="text-sm py-2 text-gray-800 leading-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  eveniet porro fuga voluptatem fugiat itaque quaerat
-                  voluptasLorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Hic eveniet porro fuga voluptatem fugiat itaque quaerat
-                  voluptas
+                  I specialize in building scalable and secure backend systems
+                  with Laravel. From designing databases to creating RESTful
+                  APIs, I ensure efficient server-side logic for seamless
+                  application performance.
                 </p>
               </div>
             </motion.div>
@@ -198,7 +187,7 @@ export default function Home() {
         <section>
           <div>
             <h2 className="text-5xl py-10 font-bold opacity-60 dark:text-white dark:opacity-80">
-              Portifolio
+              Projects
             </h2>
             <p className="text-sm py-2 text-gray-800 leading-6 dark:text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
@@ -212,12 +201,14 @@ export default function Home() {
                   whileHover={{ scale: 1.1, rotate: 2 }}
                   whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
                 >
-                  <Image
-                    className="rounded-lg object-cover"
-                    src={project2}
-                    alt="project1"
-                    layout="responsive"
-                  />
+                  <a href="">
+                    <Image
+                      className="rounded-lg object-cover"
+                      src={project2}
+                      alt="project1"
+                      layout="responsive"
+                    />
+                  </a>
                 </motion.div>
               </div>
               <div className="basis-1/3 flex-1">
@@ -225,12 +216,14 @@ export default function Home() {
                   whileHover={{ scale: 1.1, rotate: 2 }}
                   whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
                 >
-                  <Image
-                    className="rounded-lg object-cover"
-                    src={project3}
-                    alt="project1"
-                    layout="responsive"
-                  />
+                  <a href="">
+                    <Image
+                      className="rounded-lg object-cover"
+                      src={project3}
+                      alt="project1"
+                      layout="responsive"
+                    />
+                  </a>
                 </motion.div>
               </div>
               <div className="basis-1/3 flex-1">
@@ -238,12 +231,14 @@ export default function Home() {
                   whileHover={{ scale: 1.1, rotate: 2 }}
                   whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
                 >
-                  <Image
-                    className="rounded-lg object-cover"
-                    src={project1}
-                    alt="project1"
-                    layout="responsive"
-                  />
+                  <a href="">
+                    <Image
+                      className="rounded-lg object-cover"
+                      src={project1}
+                      alt="project1"
+                      layout="responsive"
+                    />
+                  </a>
                 </motion.div>
               </div>
               <div className="basis-1/3 flex-1">
@@ -251,38 +246,14 @@ export default function Home() {
                   whileHover={{ scale: 1.1, rotate: 2 }}
                   whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
                 >
-                  <Image
-                    className="rounded-lg object-cover"
-                    src={project2}
-                    alt="project1"
-                    layout="responsive"
-                  />
-                </motion.div>
-              </div>
-              <div className="basis-1/3 flex-1">
-                <motion.div
-                  whileHover={{ scale: 1.1, rotate: 2 }}
-                  whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
-                >
-                  <Image
-                    className="rounded-lg object-cover"
-                    src={project3}
-                    alt="project1"
-                    layout="responsive"
-                  />
-                </motion.div>
-              </div>
-              <div className="basis-1/3 flex-1">
-                <motion.div
-                  whileHover={{ scale: 1.1, rotate: 2 }}
-                  whileTap={{ scale: 0.8, rotate: -10, borderRadius: "100%" }}
-                >
-                  <Image
-                    className="rounded-lg object-cover"
-                    src={project1}
-                    alt="project1"
-                    layout="responsive"
-                  />
+                  <a href="">
+                    <Image
+                      className="rounded-lg object-cover"
+                      src={project2}
+                      alt="project1"
+                      layout="responsive"
+                    />
+                  </a>
                 </motion.div>
               </div>
             </div>
@@ -307,17 +278,14 @@ export default function Home() {
 
             {/* social links */}
             <div className="text-3xl flex justify-center gap-10 text-gray-600">
-              <a href="">
+              <a href="https://github.com/HShan99">
                 <FaGithub />
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/in/shan-rathnayake-0149751b8/">
                 <ImLinkedin />
               </a>
               <a href="">
                 <FaFacebook />
-              </a>
-              <a href="">
-                <AiFillMediumSquare />
               </a>
             </div>
           </div>
